@@ -1,0 +1,23 @@
+:root {
+  --fundo: #f4f6fb;
+  --card: #ffffff;
+  --texto: #1f2937;
+  --suave: #6b7280;
+  --primaria: #4f46e5;
+  --primaria-escura: #4338ca;
+  --borda: #e5e7eb;
+  --verde: #16a34a;
+  --amarelo: #d97706;
+  --vermelho: #dc2626;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: "Segoe UI", Arial, sans-serif;
+}

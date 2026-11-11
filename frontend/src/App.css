@@ -1,0 +1,272 @@
+/* ---------- Cabeçalho ---------- */
+.topo {
+  background: var(--primaria);
+  color: white;
+}
+
+.topo-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 16px 20px 0;
+}
+
+.topo h1 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.topo nav {
+  display: flex;
+  gap: 4px;
+}
+
+.aba {
+  background: transparent;
+  color: #e0e7ff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+}
+
+.aba:hover {
+  background: var(--primaria-escura);
+}
+
+.aba.ativa {
+  background: var(--fundo);
+  color: var(--primaria);
+  font-weight: bold;
+}
+
+/* ---------- Conteúdo ---------- */
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+.conteudo h2 {
+  margin: 0 0 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+/* ---------- Cartões de resumo ---------- */
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.resumo-item {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.resumo-item span {
+  display: block;
+  color: var(--suave);
+  font-size: 13px;
+}
+
+.resumo-item strong {
+  font-size: 22px;
+}
+
+.resumo-item.alerta strong {
+  color: var(--amarelo);
+}
+
+/* ---------- Formulários ---------- */
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 9px 10px;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid var(--primaria);
+  border-color: transparent;
+}
+
+button {
+  font-size: 14px;
+}
+
+.btn {
+  background: var(--primaria);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primaria-escura);
+}
+
+.btn-leve {
+  background: white;
+  color: var(--primaria);
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.btn-leve:hover {
+  background: #eef2ff;
+}
+
+.btn-perigo {
+  color: var(--vermelho);
+}
+
+.btn-perigo:hover {
+  background: #fef2f2;
+}
+
+/* ---------- Tabelas ---------- */
+.tabela-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 13px;
+  color: var(--suave);
+  padding: 8px 10px;
+  border-bottom: 2px solid var(--borda);
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--borda);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.vazio {
+  color: var(--suave);
+  text-align: center;
+  padding: 20px;
+}
+
+.acoes {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.acoes input {
+  width: 90px;
+}
+
+/* ---------- Etiquetas ---------- */
+.etiqueta {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.etiqueta.verde {
+  background: #dcfce7;
+  color: var(--verde);
+}
+
+.etiqueta.amarelo {
+  background: #fef3c7;
+  color: var(--amarelo);
+}
+
+.etiqueta.vermelho {
+  background: #fee2e2;
+  color: var(--vermelho);
+}
+
+/* ---------- Mensagens ---------- */
+.mensagem {
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.mensagem.erro {
+  background: #fee2e2;
+  color: var(--vermelho);
+}
+
+.mensagem.sucesso {
+  background: #dcfce7;
+  color: var(--verde);
+}
+
+/* ---------- Botões de Entrada / Saída ---------- */
+.tipo-botoes {
+  display: flex;
+  gap: 6px;
+}
+
+.tipo-botao {
+  padding: 9px 16px;
+  border: 1px solid var(--borda);
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tipo-botao.entrada.ativo {
+  background: var(--verde);
+  border-color: var(--verde);
+  color: white;
+}
+
+.tipo-botao.saida.ativo {
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+  color: white;
+}
+
+.estoque-atual {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
